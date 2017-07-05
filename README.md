@@ -1,3 +1,5 @@
+***This is to help simplify the creation of static state names and codes within a `State` table. Changed the 50+ `State::create` method calls from ggoforth's original repo into an array of states with a single `State::insert` call. It's an easy enough change to make on your own, but now you don't have to.***
+
 #Laravel 5 State Seeder
 
 **Usage**
