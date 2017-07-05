@@ -16,71 +16,75 @@ class StatesSeeder extends Seeder {
 
         DB::table('states')->truncate();
 
-        State::create(['name' => 'Alaska', 'code' => 'AK']);
-        State::create(['name' => 'Alabama', 'code' => 'AL']);
-        State::create(['name' => 'American Samoa', 'code' => 'AS']);
-        State::create(['name' => 'Arizona', 'code' => 'AZ']);
-        State::create(['name' => 'Arkansas', 'code' => 'AR']);
-        State::create(['name' => 'California', 'code' => 'CA']);
-        State::create(['name' => 'Colorado', 'code' => 'CO']);
-        State::create(['name' => 'Connecticut', 'code' => 'CT']);
-        State::create(['name' => 'Delaware', 'code' => 'DE']);
-        State::create(['name' => 'District of Columbia', 'code' => 'DC']);
-        State::create(['name' => 'Federated States of Micronesia', 'code' => 'FM']);
-        State::create(['name' => 'Florida', 'code' => 'FL']);
-        State::create(['name' => 'Georgia', 'code' => 'GA']);
-        State::create(['name' => 'Guam', 'code' => 'GU']);
-        State::create(['name' => 'Hawaii', 'code' => 'HI']);
-        State::create(['name' => 'Idaho', 'code' => 'ID']);
-        State::create(['name' => 'Illinois', 'code' => 'IL']);
-        State::create(['name' => 'Indiana', 'code' => 'IN']);
-        State::create(['name' => 'Iowa', 'code' => 'IA']);
-        State::create(['name' => 'Kansas', 'code' => 'KS']);
-        State::create(['name' => 'Kentucky', 'code' => 'KY']);
-        State::create(['name' => 'Louisiana', 'code' => 'LA']);
-        State::create(['name' => 'Maine', 'code' => 'ME']);
-        State::create(['name' => 'Marshall Islands', 'code' => 'MH']);
-        State::create(['name' => 'Maryland', 'code' => 'MD']);
-        State::create(['name' => 'Massachusetts', 'code' => 'MA']);
-        State::create(['name' => 'Michigan', 'code' => 'MI']);
-        State::create(['name' => 'Minnesota', 'code' => 'MN']);
-        State::create(['name' => 'Mississippi', 'code' => 'MS']);
-        State::create(['name' => 'Missouri', 'code' => 'MO']);
-        State::create(['name' => 'Montana', 'code' => 'MT']);
-        State::create(['name' => 'Nebraska', 'code' => 'NE']);
-        State::create(['name' => 'Nevada', 'code' => 'NV']);
-        State::create(['name' => 'New Hampshire', 'code' => 'NH']);
-        State::create(['name' => 'New Jersey', 'code' => 'NJ']);
-        State::create(['name' => 'New Mexico', 'code' => 'NM']);
-        State::create(['name' => 'New York', 'code' => 'NY']);
-        State::create(['name' => 'North Carolina', 'code' => 'NC']);
-        State::create(['name' => 'North Dakota', 'code' => 'ND']);
-        State::create(['name' => 'Northern Mariana Islands', 'code' => 'MP']);
-        State::create(['name' => 'Ohio', 'code' => 'OH']);
-        State::create(['name' => 'Oklahoma', 'code' => 'OK']);
-        State::create(['name' => 'Oregon', 'code' => 'OR']);
-        State::create(['name' => 'Palau', 'code' => 'PW']);
-        State::create(['name' => 'Pennsylvania', 'code' => 'PA']);
-        State::create(['name' => 'Puerto Rico', 'code' => 'PR']);
-        State::create(['name' => 'Rhode Island', 'code' => 'RI']);
-        State::create(['name' => 'South Carolina', 'code' => 'SC']);
-        State::create(['name' => 'South Dakota', 'code' => 'SD']);
-        State::create(['name' => 'Tennessee', 'code' => 'TN']);
-        State::create(['name' => 'Texas', 'code' => 'TX']);
-        State::create(['name' => 'Utah', 'code' => 'UT']);
-        State::create(['name' => 'Vermont', 'code' => 'VT']);
-        State::create(['name' => 'Virgin Islands', 'code' => 'VI']);
-        State::create(['name' => 'Virginia', 'code' => 'VA']);
-        State::create(['name' => 'Washington', 'code' => 'WA']);
-        State::create(['name' => 'West Virginia', 'code' => 'WV']);
-        State::create(['name' => 'Wisconsin', 'code' => 'WI']);
-        State::create(['name' => 'Wyoming', 'code' => 'WY']);
-        State::create(['name' => 'Armed Forces Africa', 'code' => 'AE']);
-        State::create(['name' => 'Armed Forces Americas (except Canada)', 'code' => 'AA']);
-        State::create(['name' => 'Armed Forces Canada', 'code' => 'AE']);
-        State::create(['name' => 'Armed Forces Europe', 'code' => 'AE']);
-        State::create(['name' => 'Armed Forces Middle East', 'code' => 'AE']);
-        State::create(['name' => 'Armed Forces Pacific', 'code' => 'AP']);
+        $states = [
+            ['name' => 'Alaska', 'abbreviation' => 'AK'],
+            ['name' => 'Alabama', 'abbreviation' => 'AL'],
+            ['name' => 'American Samoa', 'abbreviation' => 'AS'],
+            ['name' => 'Arizona', 'abbreviation' => 'AZ'],
+            ['name' => 'Arkansas', 'abbreviation' => 'AR'],
+            ['name' => 'California', 'abbreviation' => 'CA'],
+            ['name' => 'Colorado', 'abbreviation' => 'CO'],
+            ['name' => 'Connecticut', 'abbreviation' => 'CT'],
+            ['name' => 'Delaware', 'abbreviation' => 'DE'],
+            ['name' => 'District of Columbia', 'abbreviation' => 'DC'],
+            ['name' => 'Federated States of Micronesia', 'abbreviation' => 'FM'],
+            ['name' => 'Florida', 'abbreviation' => 'FL'],
+            ['name' => 'Georgia', 'abbreviation' => 'GA'],
+            ['name' => 'Guam', 'abbreviation' => 'GU'],
+            ['name' => 'Hawaii', 'abbreviation' => 'HI'],
+            ['name' => 'Idaho', 'abbreviation' => 'ID'],
+            ['name' => 'Illinois', 'abbreviation' => 'IL'],
+            ['name' => 'Indiana', 'abbreviation' => 'IN'],
+            ['name' => 'Iowa', 'abbreviation' => 'IA'],
+            ['name' => 'Kansas', 'abbreviation' => 'KS'],
+            ['name' => 'Kentucky', 'abbreviation' => 'KY'],
+            ['name' => 'Louisiana', 'abbreviation' => 'LA'],
+            ['name' => 'Maine', 'abbreviation' => 'ME'],
+            ['name' => 'Marshall Islands', 'abbreviation' => 'MH'],
+            ['name' => 'Maryland', 'abbreviation' => 'MD'],
+            ['name' => 'Massachusetts', 'abbreviation' => 'MA'],
+            ['name' => 'Michigan', 'abbreviation' => 'MI'],
+            ['name' => 'Minnesota', 'abbreviation' => 'MN'],
+            ['name' => 'Mississippi', 'abbreviation' => 'MS'],
+            ['name' => 'Missouri', 'abbreviation' => 'MO'],
+            ['name' => 'Montana', 'abbreviation' => 'MT'],
+            ['name' => 'Nebraska', 'abbreviation' => 'NE'],
+            ['name' => 'Nevada', 'abbreviation' => 'NV'],
+            ['name' => 'New Hampshire', 'abbreviation' => 'NH'],
+            ['name' => 'New Jersey', 'abbreviation' => 'NJ'],
+            ['name' => 'New Mexico', 'abbreviation' => 'NM'],
+            ['name' => 'New York', 'abbreviation' => 'NY'],
+            ['name' => 'North Carolina', 'abbreviation' => 'NC'],
+            ['name' => 'North Dakota', 'abbreviation' => 'ND'],
+            ['name' => 'Northern Mariana Islands', 'abbreviation' => 'MP'],
+            ['name' => 'Ohio', 'abbreviation' => 'OH'],
+            ['name' => 'Oklahoma', 'abbreviation' => 'OK'],
+            ['name' => 'Oregon', 'abbreviation' => 'OR'],
+            ['name' => 'Palau', 'abbreviation' => 'PW'],
+            ['name' => 'Pennsylvania', 'abbreviation' => 'PA'],
+            ['name' => 'Puerto Rico', 'abbreviation' => 'PR'],
+            ['name' => 'Rhode Island', 'abbreviation' => 'RI'],
+            ['name' => 'South Carolina', 'abbreviation' => 'SC'],
+            ['name' => 'South Dakota', 'abbreviation' => 'SD'],
+            ['name' => 'Tennessee', 'abbreviation' => 'TN'],
+            ['name' => 'Texas', 'abbreviation' => 'TX'],
+            ['name' => 'Utah', 'abbreviation' => 'UT'],
+            ['name' => 'Vermont', 'abbreviation' => 'VT'],
+            ['name' => 'Virgin Islands', 'abbreviation' => 'VI'],
+            ['name' => 'Virginia', 'abbreviation' => 'VA'],
+            ['name' => 'Washington', 'abbreviation' => 'WA'],
+            ['name' => 'West Virginia', 'abbreviation' => 'WV'],
+            ['name' => 'Wisconsin', 'abbreviation' => 'WI'],
+            ['name' => 'Wyoming', 'abbreviation' => 'WY'],
+            ['name' => 'Armed Forces Africa', 'abbreviation' => 'AE'],
+            ['name' => 'Armed Forces Americas (except Canada)', 'abbreviation' => 'AA'],
+            ['name' => 'Armed Forces Canada', 'abbreviation' => 'AE'],
+            ['name' => 'Armed Forces Europe', 'abbreviation' => 'AE'],
+            ['name' => 'Armed Forces Middle East', 'abbreviation' => 'AE'],
+            ['name' => 'Armed Forces Pacific', 'abbreviation' => 'AP']
+        ];
+        
+        State::insert($states);
     }
 
 }
